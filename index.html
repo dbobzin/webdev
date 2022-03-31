@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="parallax.html">ABOUT</a></li>
+                <li><a href="products.html">SPECIFICATIONS</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="survey.html">CONNECT</a></li>
+            <ulL>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>THE <br> REAL <br> SOUND
+            </h1>
+    </div>
+    <div class="right-col">
+        <p>Click Here to listen</p>
+        <img src="play-button.png" id="icon">
+    </div>
+</div>
+</div>
+
+    <audio id="mySong" >
+    <source src="song.mp3" type="audio/mp3">
+</audio>
+    
+<script> 
+var mySong = document.getElementById("mySong")
+var icon = document.getElementById("icon")
+
+icon.onclick = function(){
+    if(mySong.paused) {
+        mySong.play();
+        icon.src = "video-pause-button.png" 
+    }
+    else {
+        mySong.pause();
+        icon.src = "play-button.png"
+    }
+}
+
+</script>
+</body>
+</html>
+<!--https://www.w3schools.com/howto/howto_css_chat.asp-->
