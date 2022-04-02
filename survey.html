@@ -5,40 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link href="survey.css" rel="stylesheet" type="text/css"> 
+    <link href="style.css" rel="stylesheet" type="text/css"> 
 </head>
-<title>Employee Interests Survey</title>
+<title>Contact</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="parallax.html">ABOUT</a></li>
-                <li><a href="index.html">SPECIFICATIONS</a></li>
-                <li><a href="index.html">PRODUCTS</a></li>
-                <li><a href="survey.html">CONNECT</a></li>
-            <ulL>
-    </div>
+        <div class="header">
+            <img src = "snake.png" class="logo" width="100px" height="100px">   
+            <div class="header-right">
+              <a href="index.html">HOME</a>
+              <a href="cover.html">ABOUT</a>
+              <a href="parallax.html">SPECIFICATIONS</a>
+              <a href="products.html">PRODUCTS</a>
+              <a class="active" href="survey.html">CONNECT</a>
+            </div>
+          </div>
+          
+          <div style="padding-left:20px">
+           
+          </div>
 <!-- as it is a survey form, we will need to submit the details, hence we use form -->
 <!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
 <!--<form action="http://google.co.in"> -->
 <!-- If we remove this, every thing will move to the left of the page-->
 <div align="center">
 <!--Adds a heading to the form-->
-<h1>Employee Interests Survey form</h1>
+<h1>Contact Us!</h1>
 Enter your name:
 <!-- Input type text for small texts, specify size -->
 <input type="text" name="UserName" size=35 maxlength=35 value="">
 <!--Adds spaces - remove and see what happens -->
 </br></br>
-Enter your department:
+Enter your line of work:
 <input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
 Tell us a little about yourself:
 <!-- For writing lot of text like descriptions with text wrapping,
 if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
 <textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
-Do you exercise at home?
+Do you want to sign up for our rewards program? 
 <!-- Radio buttons help you choose one out of the many values -->
 <input type="radio" name="exe" value=1>Yes
 <input type="radio" name="exe" value=2>No
@@ -51,21 +55,16 @@ How do you like to read about your favorite topics?
 <input type="checkbox" name="Phone">Phone apps
 <input type="checkbox" name="Magazines">Magazines
 </p>
-What genre of movies do you like?
-<!--Select box lets you choose one of the multiple dropdown options-->
-<select name="moviepref" ><option>
-<option value=1 selected = "true">comedy
-<option value=2 >romance
-<option value=3 >thriller
-<option value=4 >horror
-<option value=5 >biopic
-</select>
+
 </br></br>
 <!--submits the information entered in the form by the user -->
 
-<a href="mailto:dbobzin@gmail.com">  Submit form></a>
+<a href="mailto:dbobzin3@gmail.com">  <input type=submit Submit form></a>
+
 
 </div>
 </form>
 </body>
 </html>
+<!-- https://www.youtube.com/watch?v=CQZxeoQeo5c 
+youtube video on how to build a nice website with users and content (for music page?)-->
